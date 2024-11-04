@@ -1,0 +1,89 @@
+/* Estilo para que o body ocupe toda a altura e permita centralização flexível */
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Centralizando conteúdo */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #1e3a8a, #7c3aed); /* Gradiente de fundo */
+    font-family: Arial, sans-serif;
+    color: #000; /* Define a cor de texto padrão como preto */
+}
+
+/* Estilo para o texto e campos de entrada */
+label, select, input, textarea, option {
+    color: #000; /* Define o texto como preto */
+}
+
+/* Cor preta para o texto de placeholder */
+input::placeholder, select::placeholder, textarea::placeholder {
+    color: #000;
+    opacity: 0.6;
+}
+
+/* Estilo de foco */
+select:focus, input:focus, textarea:focus {
+    border-color: #3182ce; /* Borda azul ao focar */
+    outline: none;
+}
+
+/* Estilo para mensagens de erro */
+.text-red-500 {
+    color: #e53e3e; /* Cor vermelha para erros */
+}
+
+/* Estilo para o container */
+.member-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Tabela */
+.table-auto {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Cabeçalho da tabela */
+.table-auto thead tr {
+    background-color: #f3f4f6; /* Cinza claro */
+    text-align: left;
+}
+
+/* Estilos das células */
+.table-auto th,
+.table-auto td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+/* Linhas alternadas */
+.table-auto tbody tr:nth-child(even) {
+    background-color: #f9fafb; /* Fundo alternado */
+}
+
+/* Estilos de texto e layout */
+.table-auto th {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #4b5563; /* Texto cinza escuro */
+}
+
+/* Ações centralizadas */
+.table-auto td:last-child {
+    text-align: center;
+}
+
+/* Estilo para mensagens de vazio */
+.member-list p {
+    color: #9ca3af;
+    text-align: center;
+    font-size: 1rem;
+    padding: 20px 0;
+}
+
